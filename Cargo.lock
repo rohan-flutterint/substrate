@@ -1440,12 +1440,12 @@ checksum = "acbf1af155f9b9ef647e42cdc158db4b64a1b61f743629225fde6f3e0be2a7c7"
 
 [[package]]
 name = "comfy-table"
-version = "7.0.1"
+version = "7.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9ab77dbd8adecaf3f0db40581631b995f312a8a5ae3aa9993188bb8f23d83a5b"
+checksum = "b34115915337defe99b2aff5c2ce6771e5fbc4079f4b506301f5cf394c8452f7"
 dependencies = [
- "strum",
- "strum_macros",
+ "strum 0.26.2",
+ "strum_macros 0.26.2",
  "unicode-width",
 ]
 
@@ -6686,7 +6686,7 @@ dependencies = [
  "sp-runtime",
  "sp-std",
  "sp-tracing",
- "strum",
+ "strum 0.24.1",
 ]
 
 [[package]]
@@ -11362,7 +11362,7 @@ dependencies = [
  "sp-mmr-primitives",
  "sp-runtime",
  "sp-std",
- "strum",
+ "strum 0.24.1",
  "w3f-bls",
 ]
 
@@ -11584,7 +11584,7 @@ dependencies = [
  "lazy_static",
  "sp-core",
  "sp-runtime",
- "strum",
+ "strum 0.24.1",
 ]
 
 [[package]]
@@ -12037,7 +12037,7 @@ checksum = "08615eea740067d9899969bc2891c68a19c315cb1f66640af9a9ecb91b13bcab"
 dependencies = [
  "lazy_static",
  "maplit",
- "strum",
+ "strum 0.24.1",
 ]
 
 [[package]]
@@ -12127,8 +12127,14 @@ version = "0.24.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "063e6045c0e62079840579a7e47a355ae92f60eb74daaf156fb1e84ba164e63f"
 dependencies = [
- "strum_macros",
+ "strum_macros 0.24.3",
 ]
+
+[[package]]
+name = "strum"
+version = "0.26.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5d8cec3501a5194c432b2b7976db6b7d10ec95c253208b45f83f7136aa985e29"
 
 [[package]]
 name = "strum_macros"
@@ -12141,6 +12147,19 @@ dependencies = [
  "quote",
  "rustversion",
  "syn 1.0.109",
+]
+
+[[package]]
+name = "strum_macros"
+version = "0.26.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c6cf59daf282c0a494ba14fd21610a0325f9f90ec9d1231dea26bcb1d696c946"
+dependencies = [
+ "heck",
+ "proc-macro2",
+ "quote",
+ "rustversion",
+ "syn 2.0.18",
 ]
 
 [[package]]
@@ -12465,7 +12484,7 @@ dependencies = [
  "filetime",
  "parity-wasm",
  "sp-maybe-compressed-blob",
- "strum",
+ "strum 0.24.1",
  "tempfile",
  "toml 0.7.4",
  "walkdir",
@@ -13535,8 +13554,8 @@ checksum = "d984c9ca0fd8dc99c85920c73d1707d0c2104b5cb8f368fce73b3dbf4424b22b"
 dependencies = [
  "anyhow",
  "libc",
- "strum",
- "strum_macros",
+ "strum 0.24.1",
+ "strum_macros 0.24.3",
  "tempfile",
  "thiserror",
  "wasm-opt-cxx-sys",
